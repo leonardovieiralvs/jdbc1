@@ -31,7 +31,7 @@ public class DB {
             } catch (SQLException e) {
                 throw new DbException(e.getMessage());
             }
-        } z
+        }
     }
 
     private static Properties loadProperties() {
