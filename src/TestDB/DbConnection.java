@@ -1,13 +1,12 @@
-package TestDB.DBTest;
+package TestDB;
 
 import java.io.FileInputStream;
-import java.io.FilterInputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class DBTest {
+public class DbConnection {
     private static final String USERNAME = "root";
     private static final String PASSWORD = "123456";
     private static final String DATABASE = "jdbc:mysql://localhost/coursejdbc";

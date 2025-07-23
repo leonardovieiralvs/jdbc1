@@ -1,4 +1,4 @@
-package TestDB.DBTest;
+package TestDB;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package TestDB.DBTest;
+package TestDB;
 
 public class ExceptionTest extends RuntimeException {
 

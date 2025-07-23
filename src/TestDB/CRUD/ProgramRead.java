@@ -1,7 +1,7 @@
-package TestDB.DBTest.CRUD;
+package TestDB.CRUD;
 
-import TestDB.DBTest.DBTest;
-import TestDB.DBTest.ExceptionTest;
+import TestDB.DbConnection;
+import TestDB.ExceptionTest;
 
 import java.sql.*;
 
@@ -10,7 +10,7 @@ public class ProgramRead {
 
         String sql = "SELECT * FROM seller";
 
-        try (Connection conn = DBTest.getConnection(); PreparedStatement pst = conn.prepareStatement(sql); ResultSet rs = pst.executeQuery()) {
+        try (Connection conn = DbConnection.getConnection(); PreparedStatement pst = conn.prepareStatement(sql); ResultSet rs = pst.executeQuery()) {
             while (rs.next()) {
                 System.out.println(rs.getInt("id") + ", " + rs.getString("name"));
             }
